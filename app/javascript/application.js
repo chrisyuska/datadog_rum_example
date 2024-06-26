@@ -1,6 +1,4 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "@hotwired/turbo-rails"
-// import "controllers"
 import { datadogRum } from '@datadog/browser-rum';
 
 datadogRum.init({
@@ -18,3 +16,5 @@ datadogRum.init({
   defaultPrivacyLevel: "allow",
   allowedTracingUrls: ["http://localhost:3000"]
 });
+
+import "@hotwired/turbo-rails"
